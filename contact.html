@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="portfolio_prototype.css" rel="stylesheet">
+    <script src="nav.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<!-- ***********************  LOGO / NAVIGATION  *********************** -->
+<header class="main-header">
+    <div class="container">
+      <a href="portfolio_prototype.html"><img src="Images/Simple Brand Initials Logo Mark2.png" alt="Logo for Leaan Balloni"></a>
+      <div class="mobile">
+        <span onclick="openNav()">&#9776;</span>
+      </div>
+    <nav>
+        <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="portfolio_prototype.html">Home</a>
+            <a href="#">About</a>
+            <a href="services.html">Work</a>
+            <a href="https://lilavie07.wordpress.com ">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        </div>
+    </nav>
+</header>
+ <!-- *****************  CONTACT FORM ***************** -->
+ <section>
+    <div class="services">
+    <h1>GET IN TOUCH</h1>
+     </div>
+</section>
+ <div class="form_container">
+ <form>
+     <label for="fName">First Name:</label>
+     <input type="text" name="fName" id="fName">
+     
+     <label for="lName">Last Name:</label>
+     <input type="text" name="lName" id="lName">
+     
+     <label for="email">Email Address:</label>
+     <input type="email" name="email" id="email">
+     
+     <label for="phone">Phone Number:</label>
+     <input type="tel" name="phone" id="phone">
+
+     <label for="message">Message</label>
+     <textarea id="message" name="feedback" rows="5" cols="400"></textarea>
+
+     <p>How did you hear about me?</p>
+     <label for="info">Select One:</label>
+     <select id="info" name="info">
+       <option value="facebook">Facebook</option>
+       <option value="instagram">Instagram</option>
+       <option value="github">Github</option>
+       <option value="worpress">Wordpress</option>
+       <option value="other">Other</option>
+     </select>
+     
+     <input type="submit" value="Submit">
+     <input type="reset" value="Reset">  
+ </form>
+ </div>
+
+ <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+<footer class="contact-list">
+    <ul>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+   </ul>
+   <ul>
+        <li><a href="https://lilavie07.wordpress.com ">Blog</a></li>
+        <li><a href="https://github.com/LeaBalloni07">GitHub</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+    </ul>
+    <p>All work &copy;2021 Leaan Balloni Web Design in Raleigh, NC</br>
+    Thanks for visiting and don't be a stranger</p>
+</footer>
+</main>   
+</body>
+
+</html>

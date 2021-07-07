@@ -8,29 +8,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <link href="portfolio_prototype.css" rel="stylesheet">
+    <script src="nav.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <!-- ***********************  LOGO / NAVIGATION  *********************** -->
-<header class="masthead">
-    <a href="portfolio_prototype.html"><img src="Images/Simple Brand Initials Logo Mark2.png" alt="Logo for Leaan Balloni"></a>
+<header class="main-header">
+    <div class="container">
+      <a href="portfolio_prototype.html"><img src="Images/Simple Brand Initials Logo Mark2.png" alt="Logo for Leaan Balloni"></a>
+      <div class="mobile">
+        <span onclick="openNav()">&#9776;</span>
+      </div>
     <nav>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-        </ul>
+        <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="portfolio_prototype.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Work</a>
+            <a href="https://lilavie07.wordpress.com ">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        </div>
     </nav>
 </header>
 
  <!-- ***********************  HERO IMAGE / CTA  *********************** -->
 <main>
 <section class="hero_image">
-    <img src="Images/me.jpg" alt="">
-    <h1>Hi, I'm Leaan Balloni</h1>
-    <p>I am a</p>
-    <h2>creative</h2>
-    <p>designer</p>  
+        <div id="profile_pic">
+        <img src="Images/me.jpg" alt="">
+    </div>
+    <div id="creative">
+        <h1>Hi, I'm Leaan Balloni</h1>
+        <p>I am a</p>
+        <h2>creative</h2>
+        <p>designer</p>  
+    </div>
 </section>
 
  <!-- ***********************  WORK  *********************** -->
@@ -45,27 +60,27 @@
                     <figure class="card">
                         <img src="Images/sylwia-pietruszka-XwdSGEiOahM-unsplash.jpg" alt="Bookcase with prtrait of a image of woman dressed in 50's outfit, behind a potted plant.">
                         <figcaption class="caption">
-                            <h3 class="caption-title">Designs</h3>
+                            <h3 class="caption-title">Web Designs</h3>
                         </figcaption>
                     </figure>
                 </a>
             </li>
             <li class="card-item double2">
-                <a href="#">
+                <a href="https://github.com/LeaBalloni07">
                     <figure class="card">
                         <img src="Images/joanna-kosinska-RE-8WswW95o-unsplash.jpg" alt="Pencils ontop of a desk surrounded by color samples and paperclips.">
                         <figcaption class="caption">
-                            <h3 class="caption-title">JavaScript</h3>
+                            <h3 class="caption-title">JavaScript Code</h3>
                         </figcaption>
                     </figure>
                 </a>
             </li>
             <li class="card-item portrait">
-                <a href="#">
+                <a href="https://lilavie07.wordpress.com">
                     <figure class="card">
                         <img src="Images/alexandra-lammerink-51mGz4OKUJs-unsplash.jpg" alt="Outstreched arm holding orange flower in front of wall that has rainbows painted on it.">
                         <figcaption class="caption">
-                            <h3 class="caption-title">Applications</h3>
+                            <h3 class="caption-title">Blog</h3>
                         </figcaption>
                     </figure>
                 </a>
@@ -75,7 +90,7 @@
                     <figure class="card">
                         <img src="Images/annie-spratt-Bd2uKyQxCAI-unsplash.jpg" alt="Single wall shelf with photograph of woman surrounded by flowers.">
                         <figcaption class="caption">
-                            <h3 class="caption-title">Graphics</h3>
+                            <h3 class="caption-title">Aplications</h3>
                         </figcaption>
                     </figure>
                 </a>
@@ -95,13 +110,13 @@
  <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
  <footer class="contact-list">
      <ul>
+         <li><a href="#">Work</a></li>
          <li><a href="#">Contact</a></li>
-         <li><a href="#">About</a></li>
     </ul>
     <ul>
-         <li><a href="#">Blog</a></li>
-         <li><a href="#">GitHub</a></li>
-         <li><a href="#">Instagram</a></li>
+         <li><a href="https://lilavie07.wordpress.com ">Blog</a></li>
+         <li><a href="https://github.com/LeaBalloni07">GitHub</a></li>
+         <li><a href="https://www.instagram.com">Instagram</a></li>
      </ul>
      <p>All work &copy;2021 Leaan Balloni Web Design in Raleigh, NC</br>
      Thanks for visiting and don't be a stranger</p>
